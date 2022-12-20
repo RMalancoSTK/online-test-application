@@ -1,0 +1,20 @@
+.main-material-card {
+  margin: 6rem auto;
+  width: 40%;
+  background-color: lighten(#0f4c81, 68%);
+}
+
+.quiz-card {
+  margin: 2rem auto;
+  width: 40%;
+}
+
+.material-image {
+  max-width: 7rem;
+  margin: 0 auto;
+}
+
+.quiz-title {
+  margin: 0 auto;
+  width: 40%;
+}

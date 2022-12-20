@@ -1,0 +1,13 @@
+<div class="quiz" *ngIf="question">
+  <mat-card-header>
+    <mat-card-title id="question-title">{{question.label}}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <mat-radio-group class="question-radio-group" aria-labelledby="question-title">
+      <mat-radio-button *ngFor="let choice of question.choices" class="question-radio-button" [value]="choice"
+        (change)="radioSelected($event)">
+        {{choice.value}}
+      </mat-radio-button>
+    </mat-radio-group>
+  </mat-card-content>
+</div>

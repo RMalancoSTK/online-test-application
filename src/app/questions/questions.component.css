@@ -1,0 +1,16 @@
+.quiz-card {
+  margin: 6rem auto;
+  width: 40%;
+  background-color: lighten(#0f4c81, 68%);
+  padding: 3rem;
+}
+
+.question-card {
+  margin: 6rem auto;
+  width: 50%;
+}
+.quiz-title {
+  margin: 0 auto;
+  width: 30%;
+  font-size: 3rem;
+}

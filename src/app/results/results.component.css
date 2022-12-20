@@ -1,0 +1,73 @@
+.main-results-card {
+  margin: 6rem auto;
+  width: 40%;
+  background-color: lighten(#0f4c81, 68%);
+}
+
+.results-card {
+  margin: 6rem auto;
+  width: 80%;
+}
+
+.main-title {
+  margin: 0 auto;
+  width: 30%;
+}
+
+.answer {
+  margin: 1rem;
+}
+
+.icon {
+  max-width: 1.5rem;
+  margin-right: 0.8rem;
+  margin-bottom: 0.6rem;
+}
+
+.result-div {
+  display: flex;
+}
+
+.results-correct-div {
+  display: flex;
+  min-height: 2rem;
+  margin-left: 0.7rem;
+  padding-top: 0.6rem;
+  padding-left: 0.5rem;
+  width: 40%;
+  border: 1rem transparent;
+  border-radius: 2rem;
+  background-color: rgba(0, 255, 0, 0.2);
+}
+
+.results-incorrect-div {
+  display: flex;
+  margin-left: 0.7rem;
+  padding-top: 0.6rem;
+  padding-left: 0.5rem;
+  min-height: 2rem;
+  width: 40%;
+  border: 1rem transparent;
+  border-radius: 2rem;
+  background-color: rgba(255, 0, 0, 0.2);
+}
+
+.result-number {
+  padding-top: 0.6rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.correct-choice {
+  margin-left: 1rem;
+  padding-top: 0.7rem;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.correct-value {
+  color: green;
+  font-weight: bolder;
+  font-size: 1rem;
+  margin-left: 0.3rem;
+}

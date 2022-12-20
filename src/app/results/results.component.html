@@ -1,0 +1,31 @@
+<mat-card class="main-results-card">
+  <mat-card-header class="main-title">
+    <mat-card-title>{{currentQuiz}} Quiz</mat-card-title>
+  </mat-card-header>
+  <mat-card class="results-card">
+    <mat-card-header>
+      <mat-card-title>Results</mat-card-title>
+      <mat-card-subtitle>{{results.correctCount}} out of {{results.totalQuestions}} correct.
+        {{results.percentage}}%</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content class="answer" *ngFor="let a of answers.values; index as i" [ngClass]="{correct: a.correct}">
+      <div class="result-div">
+        <p class="result-number">{{i+1}}.</p>
+        <div class="results-correct-div" *ngIf="a.correct else incorrect">
+          <img class="icon" src="../../assets/images/success.svg"> {{a.value}}
+        </div>
+        <ng-template #incorrect>
+          <div class="results-incorrect-div">
+            <img class="icon" src="../../assets/images/error.svg"> {{a.value}}
+          </div>
+          <div class="correct-choice">Correct choice: <span class="correct-value">{{correctChoice[i]}}</span></div>
+        </ng-template>
+      </div>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button class="btn btn-primary">
+        <a routerLink="/welcome" class="btn btn-primary">CHOOSE ANOTHER QUIZ</a>
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</mat-card>

@@ -1,0 +1,15 @@
+.question-card {
+  margin: 6rem auto;
+  width: 30%;
+  background-color: lighten(#0f4c81, 68%);
+}
+
+.question-radio-group {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+}
+
+.question-radio-button {
+  margin: 1rem 0.8rem;
+}
